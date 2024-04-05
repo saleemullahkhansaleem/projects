@@ -19,7 +19,6 @@ const LuckyBirthday = () => {
     return sum % num === 0 ? true : false;
   };
   return (
-    <div className="w-full min-h-[70vh] flex items-center justify-center">
       <form className="rounded shadow p-4 flex flex-col gap-4 bg-zinc-200 dark:bg-zinc-700 w-80">
         <h2 className="text-xl">Is your birthday lucky?</h2>
         <div className="flex">
@@ -66,7 +65,6 @@ const LuckyBirthday = () => {
           </div>
         )}
       </form>
-    </div>
   );
 };
 

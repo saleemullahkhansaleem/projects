@@ -8,7 +8,9 @@ function App() {
     <div className={darkMode ? "dark" : "light"}>
       <div className="w-full min-h-screen bg-white dark:bg-zinc-800 text-black dark:text-white ">
         <Header setmode={setDarkMode} mode={darkMode} />
-        <Outlet />
+        <div className="w-full min-h-[70vh] flex items-center justify-center">
+          <Outlet />
+        </div>
       </div>
     </div>
   );
