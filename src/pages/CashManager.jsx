@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import Input from "../components/Input";
 
 const CashManager = () => {
   const [billAmount, setBillAmount] = useState(+"");
@@ -23,34 +24,30 @@ const CashManager = () => {
   };
   return (
     <div className="w-full min-h-[70vh] flex items-center justify-center">
-      <form className="rounded shadow p-4 flex flex-col gap-4 bg-zinc-700 w-80">
+      <form className="rounded shadow p-4 flex flex-col gap-4 bg-zinc-200 dark:bg-zinc-700 w-80">
         <h2 className="text-xl">Manage the cash register</h2>
         <div className="flex">
-          <div className="flex flex-col gap-2">
-            <label htmlFor="bill_amount">Bill amount</label>
-            <input
-              className="w-full rounded-l bg-zinc-800 outline-none py-2 px-4"
-              type="number"
-              name="bill_amount"
-              id="bill_amount"
-              value={billAmount || ""}
-              placeholder={0}
-              onChange={(e) => setBillAmount(e.target.value)}
-            />
-          </div>
+          <Input
+            className="rounded-l"
+            type="number"
+            name="bill_amount"
+            id="bill_amount"
+            value={billAmount || ""}
+            placeholder={0}
+            onChange={(e) => setBillAmount(e.target.value)}
+            label="Bill amount"
+          />
           {billAmount ? (
-            <div className="flex flex-col gap-2">
-              <label htmlFor="cash_amount">Cash given</label>
-              <input
-                className="w-full rounded-r border-l border-zinc-700 bg-zinc-800 outline-none py-2 px-4"
-                type="number"
-                name="cash_amount"
-                id="cash_amount"
-                value={cashAmount || ""}
-                placeholder={0}
-                onChange={(e) => setCashAmount(e.target.value)}
-              />
-            </div>
+            <Input
+              className="rounded-r border-l"
+              type="number"
+              name="cash_amount"
+              id="cash_amount"
+              value={cashAmount || ""}
+              placeholder={0}
+              onChange={(e) => setCashAmount(e.target.value)}
+              label="Cash given"
+            />
           ) : (
             ""
           )}
