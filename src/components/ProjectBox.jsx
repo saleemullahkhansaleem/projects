@@ -23,9 +23,15 @@ const ProjectBox = ({ url, gitUrl, title, description, reverse }) => {
           <p className="text-zinc-500 py-2">{description}</p>
         </div>
         <div className="flex gap-2 justify-end">
-          {url && <Button link={url} text="View Live" icon={<MdWeb />} />}
+          {url && (
+            <Button link={url} icon={<MdWeb />}>
+              View Live
+            </Button>
+          )}
           {gitUrl && (
-            <Button link={gitUrl} text="View Code" icon={<FaGithub />} />
+            <Button link={gitUrl} icon={<FaGithub />}>
+              View Code
+            </Button>
           )}
         </div>
       </div>
