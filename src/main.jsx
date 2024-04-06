@@ -4,9 +4,9 @@ import App from "./App.jsx";
 import "./index.css";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Home from "./pages/Home.jsx";
-import CashManager from "./pages/CashManager.jsx";
 import Contact from "./pages/Contact.jsx";
-import LuckyBirthday from "./pages/LuckyBirthday.jsx";
+import LuckyBirthday from "./Projects/LuckyBirthday.jsx";
+import Projects from "./pages/Projects.jsx";
 
 const router = createBrowserRouter([
   {
@@ -18,12 +18,8 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "cash-manager",
-        element: <CashManager />,
-      },
-      {
-        path: "lucky-birthday",
-        element: <LuckyBirthday />,
+        path: "projects",
+        element: <Projects />,
       },
       {
         path: "contact",
