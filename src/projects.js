@@ -2,6 +2,7 @@ const projects = [
   {
     name: "Mr Portfolio",
     title: "Mr Saleem Portfolio",
+    route: "portfolio",
     description:
       "repellat fugiat tempora ab et reiciendis sint asperiores voluptatem ut vero commodi magnam! Obcaecati libero at eligendi! Atque voluptates itaque distinctio repellendus nisi eius veniam rerum, magni praesentium velit consequuntur minus recusandae debitis asperiores molestias, eveniet eum maiores dolorum nobis accusamus sint. Ullam rerum nemo velit explicabo laboriosam? Inventore aut vel sequi repellendus minus autem libero dolorem, qui vero, obcaecati doloribus.",
     url: "https://mrsaleem.vercel.app/",
@@ -10,6 +11,7 @@ const projects = [
   {
     name: "Mr Slider",
     title: "A vertical Slider",
+    route: "slider",
     description:
       "repellat fugiat tempora ab et reiciendis sint asperiores voluptatem ut vero commodi magnam! Obcaecati libero at eligendi! Atque voluptates itaque distinctio repellendus nisi eius veniam rerum, magni praesentium velit consequuntur minus recusandae debitis asperiores molestias, eveniet eum maiores dolorum nobis accusamus sint. Ullam rerum nemo velit explicabo laboriosam? Inventore aut vel sequi repellendus minus autem libero dolorem, qui vero, obcaecati doloribus.",
     url: "https://mrslider.vercel.app/",
@@ -18,6 +20,7 @@ const projects = [
   {
     name: "Vidamate",
     title: "Vidamate (A freelancing platform)",
+    route: "vidamate",
     description:
       "repellat fugiat tempora ab et reiciendis sint asperiores voluptatem ut vero commodi magnam! Obcaecati libero at eligendi! Atque voluptates itaque distinctio repellendus nisi eius veniam rerum, magni praesentium velit consequuntur minus recusandae debitis asperiores molestias, eveniet eum maiores dolorum nobis accusamus sint. Ullam rerum nemo velit explicabo laboriosam? Inventore aut vel sequi repellendus minus autem libero dolorem, qui vero, obcaecati doloribus.",
     url: "https://vida-mate-frontend.vercel.app/",
@@ -26,6 +29,7 @@ const projects = [
   {
     name: "Cash Manager",
     title: "Manage the cash register",
+    route: "cash-manager",
     description:
       "repellat fugiat tempora ab et reiciendis sint asperiores voluptatem ut vero commodi magnam! Obcaecati libero at eligendi! Atque voluptates itaque distinctio repellendus nisi eius veniam rerum, magni praesentium velit consequuntur minus recusandae debitis asperiores molestias, eveniet eum maiores dolorum nobis accusamus sint. Ullam rerum nemo velit explicabo laboriosam? Inventore aut vel sequi repellendus minus autem libero dolorem, qui vero, obcaecati doloribus.",
 
@@ -34,6 +38,7 @@ const projects = [
   {
     name: "Lucky birthday",
     title: "Is your birthday lucky?",
+    route: "lucky-birthday",
     description:
       "repellat fugiat tempora ab et reiciendis sint asperiores voluptatem ut vero commodi magnam! Obcaecati libero at eligendi! Atque voluptates itaque distinctio repellendus nisi eius veniam rerum, magni praesentium velit consequuntur minus recusandae debitis asperiores molestias, eveniet eum maiores dolorum nobis accusamus sint. Ullam rerum nemo velit explicabo laboriosam? Inventore aut vel sequi repellendus minus autem libero dolorem, qui vero, obcaecati doloribus.",
 

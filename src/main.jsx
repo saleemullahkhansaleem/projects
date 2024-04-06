@@ -7,6 +7,8 @@ import Home from "./pages/Home.jsx";
 import Contact from "./pages/Contact.jsx";
 import LuckyBirthday from "./Projects/LuckyBirthday.jsx";
 import Projects from "./pages/Projects.jsx";
+import CashManager from "./Projects/CashManager.jsx";
+import NotFound from "./components/NotFound.jsx";
 
 const router = createBrowserRouter([
   {
@@ -20,12 +22,30 @@ const router = createBrowserRouter([
       {
         path: "projects",
         element: <Projects />,
+        children: [
+          {
+            path: "cash-manager",
+            element: <CashManager />,
+          },
+          {
+            path: "lucky-birthday",
+            element: <LuckyBirthday />,
+          },
+        ],
       },
       {
         path: "contact",
         element: <Contact />,
       },
+      {
+        path: "*",
+        element: <NotFound />,
+      },
     ],
+  },
+  {
+    path: "*",
+    element: <NotFound />,
   },
 ]);
 

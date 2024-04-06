@@ -52,13 +52,13 @@ const Header = ({ setmode, mode }) => {
           className="uppercase text-xl text-zinc-500 flex items-center gap-2"
         >
           <img
-            src="logo-light.webp"
+            src="../logo-light.webp"
             alt="Saleem Logo"
             width="25px"
             className="hidden dark:block"
           />
           <img
-            src="logo-dark.webp"
+            src="../logo-dark.webp"
             alt="Saleem Logo"
             width="25px"
             className="dark:hidden block"
@@ -69,7 +69,7 @@ const Header = ({ setmode, mode }) => {
           ref={menuRef}
           className={`absolute md:static top-8 flex-col py-2 md:py-0 ${
             showMenu ? "flex" : "hidden"
-          } md:flex md:flex-row items-center bg-zinc-700 z-10 shadow md:shadow-none`}
+          } md:flex md:flex-row items-center bg-zinc-200 dark:bg-zinc-700 z-10 shadow md:shadow-none`}
         >
           {navLinks.map((link, i) => (
             <NavLink
