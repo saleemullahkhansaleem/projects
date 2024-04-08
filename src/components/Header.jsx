@@ -42,7 +42,8 @@ const Header = ({ setmode, mode }) => {
     <div className="bg-zinc-200 dark:bg-zinc-700">
       <Container className="w-full flex flex-wrap items-center justify-between gap-2 px-2 md:px-4 relative">
         <div
-          className="block md:hidden"
+          ref={menuRef}
+          className="block md:hidden text-3xl"
           onClick={() => setShowMenu((prv) => !prv)}
         >
           <IoMdMenu />
