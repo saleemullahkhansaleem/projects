@@ -1,5 +1,4 @@
 import { Link, Outlet } from "react-router-dom";
-import CashManager from "../Projects/CashManager";
 import projects from "../projects";
 
 const Projects = () => {

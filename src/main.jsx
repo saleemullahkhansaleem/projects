@@ -19,20 +19,20 @@ const router = createBrowserRouter([
         path: "",
         element: <Home />,
       },
+      // {
+      //   path: "projects",
+      //   element: <Projects />,
+      //   children: [
       {
-        path: "projects",
-        element: <Projects />,
-        children: [
-          {
-            path: "cash-manager",
-            element: <CashManager />,
-          },
-          {
-            path: "lucky-birthday",
-            element: <LuckyBirthday />,
-          },
-        ],
+        path: "cash-manager",
+        element: <CashManager />,
       },
+      {
+        path: "lucky-birthday",
+        element: <LuckyBirthday />,
+      },
+      //   ],
+      // },
       {
         path: "contact",
         element: <Contact />,
