@@ -39,7 +39,7 @@ const Home = () => {
             delectus ut temporibus?"
       />
       <ProjectBox
-        url="http://vidamates.com/"
+        url="https://vida-mate-frontend.vercel.app/"
         gitUrl="https://github.com/syedalishah009/vida-mate-frontend"
         title="Vidamate (A freelancing platform)"
         description="Lorem ipsum dolor sit amet consectetur, adipisicing elit. A pariatur
